@@ -7,7 +7,7 @@ public abstract class EquipoEmergencia {
     }
 
     public void mostrarNombre(){
-        System.out.println("Equipo de emergencia...");
+        System.out.println(nombre);
     }
 
     public abstract void atenderEmergencia();
