@@ -9,9 +9,21 @@ void main() {
     brigadamedica1.mostrarNombre();
     brigadamedica1.atenderEmergencia();
 
-    brigadatecnica1.atenderEmergencia();
-    brigadatecnica1.mostrarNombre();
 
-    dronrescate1.atenderEmergencia();
+    brigadatecnica1.mostrarNombre();
+    brigadatecnica1.atenderEmergencia();
+
     dronrescate1.mostrarNombre();
+    dronrescate1.atenderEmergencia();
+
+
+    DronRescate dron = new DronRescate("Dron de Rescate");
+    BrigadaTecnica tecnica = new BrigadaTecnica("Brigada Técnica");
+
+
+    dron.volar();
+    tecnica.reparar();
+
+    dron.atenderEmergencia();
+    tecnica.atenderEmergencia();
 }

@@ -1,4 +1,4 @@
-public class BrigadaTecnica extends EquipoEmergencia{
+public class BrigadaTecnica extends EquipoEmergencia implements Reparador{
 
     public BrigadaTecnica(String nombre) {
         super(nombre);
@@ -7,5 +7,10 @@ public class BrigadaTecnica extends EquipoEmergencia{
     @Override
     public void atenderEmergencia(){
         System.out.println("Revisando infraestructura dañada...");
+    }
+
+    @Override
+    public void reparar(){
+        System.out.println("Proceso de reparacion..");
     }
 }
