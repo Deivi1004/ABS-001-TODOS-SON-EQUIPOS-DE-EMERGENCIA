@@ -1,13 +1,17 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
-    }
+    BrigadaMedica brigadamedica1 = new BrigadaMedica("Equipo Alpha");
+    BrigadaTecnica brigadatecnica1 = new BrigadaTecnica("Equipo Beta");
+    DronRescate dronrescate1 = new DronRescate("Equipo Charlie");
+
+    brigadamedica1.mostrarNombre();
+    brigadamedica1.atenderEmergencia();
+
+    brigadatecnica1.atenderEmergencia();
+    brigadatecnica1.mostrarNombre();
+
+    dronrescate1.atenderEmergencia();
+    dronrescate1.mostrarNombre();
 }
