@@ -26,4 +26,23 @@ void main() {
 
     dron.atenderEmergencia();
     tecnica.atenderEmergencia();
+
+
+    EquipoEmergencia equipo1 = new BrigadaMedica("Brigada Médica");
+
+    EquipoEmergencia equipo2 = new BrigadaTecnica("Brigada Técnica");
+
+    EquipoEmergencia equipo3 = new DronRescate("Dron de Rescate");
+
+    equipo1.atenderEmergencia();
+    equipo2.atenderEmergencia();
+    equipo3.atenderEmergencia();
+
+    Volador volador = new DronRescate("Dron Aéreo");
+
+    volador.volar();
+
+    Reparador reparador = new BrigadaTecnica("Equipo Técnico");
+
+    reparador.reparar();
 }
